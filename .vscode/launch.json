@@ -1,34 +1,24 @@
-{  
-    "version": "0.2.0",  
-    "configurations": [  
-        {  
-            "name": "C++ Launch",  
-            "type": "cppdbg",  
-            "request": "launch",  
-            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",  
-            "args": [],  
-            "stopAtEntry": false,  
-            "cwd": "${workspaceFolder}",  
-            "environment": [],  
-            "externalConsole": false,  
-            "MIMode": "gdb",  
-            "setupCommands": [  
-                {  
-                    "description": "Enable pretty-printing for gdb",  
-                    "text": "-enable-pretty-printing",  
-                    "ignoreFailures": true  
-                }  
-            ],  
-            "preLaunchTask": "build",  
-            "setupCommands": [  
-                {  
-                    "description": "Enable pretty-printing for gdb",  
-                    "text": "-enable-pretty-printing",  
-                    "ignoreFailures": true  
-                }  
-            ],  
-            "miDebuggerPath": "C:/path/to/your/gdb.exe", // Adjust this path  
-            "stopAtEntry": false  
-        }  
-    ]  
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/pico/Desktop/Github summer 2024/VisionQuest-Monocular-Images",
+      "program": "c:/Users/pico/Desktop/Github summer 2024/VisionQuest-Monocular-Images/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
 }
